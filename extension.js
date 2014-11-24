@@ -40,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("@ recieves the blunt");
+                    API.sendChat("/user recieves the blunt");
                 }
             }
         };
@@ -53,7 +53,7 @@ bot.commands.headCommand = {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("@ gets head");
+                    API.sendChat("/user gets head");
                 }
             }
         };
