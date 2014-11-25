@@ -2953,7 +2953,7 @@ API.sendChat("@"+ data.un +" Gives head to @" + room[userR].username + ".");
 
 API.on(API.CHAT, function(data){
     
-if(data.message.indexOf('!strip') === 0){
+if(data.message.indexOf('!grapefruit') === 0){
 API.moderateDeleteChat(data.cid);
 var room = API.getUsers();
 var userR = Math.floor(Math.random() * room.length);
