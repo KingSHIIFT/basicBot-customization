@@ -2857,6 +2857,11 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Sketchers are a popular shoeware company which is known for servicing young thots in apparel to suck dick.");
 }
 
+if(data.message.indexOf('!falcons') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Saints suck dick!");
+}
+
 if(data.message.indexOf('!thotlevel') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] 's thot level is over 9000!");
@@ -2957,7 +2962,7 @@ if(data.message.indexOf('!grapefruit') === 0){
 API.moderateDeleteChat(data.cid);
 var room = API.getUsers();
 var userR = Math.floor(Math.random() * room.length);
-API.sendChat("Gives Grapefruit technique to @" + room[userR].username + ".");
+API.sendChat("Gives grapefruit technique to @" + room[userR].username + ".");
 }
 });
 
