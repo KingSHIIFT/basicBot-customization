@@ -2852,6 +2852,11 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("Shiift is the King!");
 }
 
+if(data.message.indexOf('!united') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Manchester united is the best team ever!");
+}
+
 if(data.message.indexOf('!sketchers') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Sketchers are a popular shoeware company which is known for servicing young thots in apparel to suck dick.");
