@@ -2945,11 +2945,21 @@ var userR = Math.floor(Math.random() * room.length);
 API.sendChat("@"+ data.un +" Gives head to @" + room[userR].username + ".");
 }
 });
+
+API.on(API.CHAT, function(data){
+    
+if(data.message.indexOf('!thotlevel') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("@"+ data.un +"@ 's Thot level is over 9000 " + room[userR].username + ".");
+}
+});
  
 API.on(API.USER_JOIN, function(user){
     if(user.id == "3741010")
     {
-       setTimeout(function(){API.sendChat("King Variety has arrived!");}, 6000);
+       setTimeout(function(){API.sendChat("King SHIIFT has arrived!");}, 6000);
     }
 });
 
