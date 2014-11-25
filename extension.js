@@ -2847,9 +2847,14 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] ( . Y . )");
 }
  
-if(data.message.indexOf('!variety') === 0){
+if(data.message.indexOf('!shiift') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("Variety is the shit!");
+API.sendChat("Shiift is the shit!");
+}
+
+if(data.message.indexOf('!sketchers') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] A popular shoeware company which is known for servicing young thots in apparel to suck dick.");
 }
 
 if(data.message.indexOf('!grab') === 0){
