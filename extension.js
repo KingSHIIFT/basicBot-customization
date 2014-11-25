@@ -2952,7 +2952,7 @@ if(data.message.indexOf('!thotlevel') === 0){
 API.moderateDeleteChat(data.cid);
 var room = API.getUsers();
 var userR = Math.floor(Math.random() * room.length);
-API.sendChat("@"+ data.un +"@ 's Thot level is over 9000 " + room[userR].username + ".");
+API.sendChat("@"+ data.un +" 's Thot level is over 9000 "
 }
 });
  
