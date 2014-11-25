@@ -2857,6 +2857,11 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Sketchers are a popular shoeware company which is known for servicing young thots in apparel to suck dick.");
 }
 
+if(data.message.indexOf('!sketchers') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] @'s thot level is over 9000!");
+}
+
 if(data.message.indexOf('!grab') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("Grabbing this song, "+ data.un +" :star:");
@@ -2946,16 +2951,6 @@ API.sendChat("@"+ data.un +" Gives head to @" + room[userR].username + ".");
 }
 });
 
-API.on(API.CHAT, function(data){
-    
-if(data.message.indexOf('!thotlevel') === 0){
-API.moderateDeleteChat(data.cid);
-var room = API.getUsers();
-var userR = Math.floor(Math.random() * room.length);
-API.sendChat("@"+ data.un +" 's Thot level is over 9000 "
-}
-});
- 
 API.on(API.USER_JOIN, function(user){
     if(user.id == "3741010")
     {
