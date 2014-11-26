@@ -2824,7 +2824,7 @@
  
 if(data.message.indexOf('!bowl') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("["+ data.un +"] Toke up! :deciduous_tree::fire:");
+API.sendChat("["+ data.un +"] Toke up! :deciduous_tree::fire: and here's a complimentary KFC bucket!");
 }
 
 if(data.message.indexOf('!lightskin') === 0){
