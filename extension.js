@@ -2869,7 +2869,7 @@ API.sendChat("["+ data.un +"] baking soda, we got baking soda!");
 
 if(data.message.indexOf('!negus') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("["+ data.un +"] The word negus is a noun derived from the ancient language Ge'ez, meaning to reign. in other words, we're kings nigga.");
+API.sendChat("["+ data.un +"] Negus is a title in multiple Afro-Asiatic languages. It's used as the title for a King. All of you are neguses.");
 }
 
 if(data.message.indexOf('!sketchers') === 0){
