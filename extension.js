@@ -2864,7 +2864,7 @@ API.sendChat("["+ data.un +"] Manchester united is the best football team ever!"
 
 if(data.message.indexOf('!coco') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("["+ data.un +"] baking soda, we got baking soda!");
+API.sendChat("["+ data.un +"] baking soda, we got baking soda! AM IN <3 WID DE COCO!");
 }
 
 if(data.message.indexOf('!negus') === 0){
@@ -2890,6 +2890,11 @@ API.sendChat("["+ data.un +"] You gettin cheeky ye?!");
 if(data.message.indexOf('!thotlevel') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] 's thot level is over 9000!");
+}
+
+if(data.message.indexOf('!nickel') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] 15 bucks, little man. Put that shit, in my hand");
 }
 
 if(data.message.indexOf('!grab') === 0){
