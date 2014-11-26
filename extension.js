@@ -2859,12 +2859,17 @@ API.sendChat("Thobbits are a small, promiscuous, humanoid race who inhabit the l
 
 if(data.message.indexOf('!united') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("["+ data.un +"] Manchester united is the best team ever!");
+API.sendChat("["+ data.un +"] Manchester united is the best football team ever!");
 }
 
 if(data.message.indexOf('!coco') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] baking soda, we got baking soda!");
+}
+
+if(data.message.indexOf('!negus') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] The word negus is a noun derived from the ancient language Ge'ez, meaning to reign. in other words, we're kings nigga.");
 }
 
 if(data.message.indexOf('!sketchers') === 0){
@@ -2875,6 +2880,11 @@ API.sendChat("["+ data.un +"] Sketchers are a popular shoeware company which is 
 if(data.message.indexOf('!falcons') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Saints suck dick!");
+}
+
+if(data.message.indexOf('!uwotm8') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] You gettin cheeky ye?!");
 }
 
 if(data.message.indexOf('!thotlevel') === 0){
