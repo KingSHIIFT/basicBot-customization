@@ -2852,14 +2852,19 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("Shiift is the King!");
 }
 
+if(data.message.indexOf('!thobbit') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("Thobbits are a small, promiscuous, humanoid race who inhabit the lands of plug dj in heatrock's room of Rap & hip-hop nation.");
+}
+
 if(data.message.indexOf('!united') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Manchester united is the best team ever!");
 }
 
-if(data.message.indexOf('!mishy') === 0){
+if(data.message.indexOf('!coco') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("["+ data.un +"] Mishy is placed at number one in the waitlist. sike...");
+API.sendChat("["+ data.un +"] baking soda, we got baking soda!");
 }
 
 if(data.message.indexOf('!sketchers') === 0){
