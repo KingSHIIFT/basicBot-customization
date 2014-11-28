@@ -2957,6 +2957,16 @@ API.sendChat("@"+ room[userR].username +" sucks dick behind the school wearing S
 });
 
 API.on(API.CHAT, function(data){
+
+if(data.message.indexOf('!ten') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("@"+ room[userR].username +" sucky sucky ten dolla? ");
+}
+});
+
+API.on(API.CHAT, function(data){
     
 if(data.message.indexOf('!lapdance') === 0){
 API.moderateDeleteChat(data.cid);
