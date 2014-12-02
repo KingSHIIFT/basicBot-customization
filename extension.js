@@ -2882,6 +2882,11 @@ API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] Saints suck dick!");
 }
 
+if(data.message.indexOf('!liverpool') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Liverpool sucks dick! shittest team ever tbh");
+}
+
 if(data.message.indexOf('!uwotm8') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("["+ data.un +"] You gettin cheeky ye?!");
