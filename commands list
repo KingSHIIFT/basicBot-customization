@@ -1,0 +1,194 @@
+    };
+
+    loadChat(basicBot.startup);
+    
+    API.on(API.CHAT, function(data){
+ 
+if(data.message.indexOf('!bowl') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Toke up! :deciduous_tree::fire: and here's a complimentary KFC bucket!");
+}
+
+if(data.message.indexOf('!lightskin') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Lightskin Monday is a day where R&B is allowed. If you don't like it, please hit the mute button.");
+}
+ 
+if(data.message.indexOf('!beer') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Cheers! :beers:");
+}
+ 
+if(data.message.indexOf('!burger') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Here's your burger! :hamburger:");
+}
+ 
+if(data.message.indexOf('!tits') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] ( . Y . )");
+}
+ 
+if(data.message.indexOf('!shiift') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("Shiift is the King!");
+}
+
+if(data.message.indexOf('!thobbit') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("Thobbits are a small, promiscuous, humanoid race who inhabit the lands of plug dj in heatrock's room of Rap & hip-hop nation.");
+}
+
+if(data.message.indexOf('!united') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Manchester united is the best football team ever!");
+}
+
+if(data.message.indexOf('!coco') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] baking soda, we got baking soda! AM IN <3 WID DE COCO!");
+}
+
+if(data.message.indexOf('!negus') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Negus is a title in multiple Afro-Asiatic languages. It's used as the title for a King. All of you are neguses.");
+}
+
+if(data.message.indexOf('!sketchers') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Sketchers are a popular shoeware company which is known for servicing young thots in apparel to suck dick.");
+}
+
+if(data.message.indexOf('!falcons') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Saints suck dick!");
+}
+
+if(data.message.indexOf('!liverpool') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] Liverpool sucks dick! shittest team ever tbh");
+}
+
+if(data.message.indexOf('!uwotm8') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] You gettin cheeky ye?!");
+}
+
+if(data.message.indexOf('!thotlevel') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] 's thot level is over 9000!");
+}
+
+if(data.message.indexOf('!nickel') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("["+ data.un +"] 15 bucks, little man. Put that shit, in my hand");
+}
+
+if(data.message.indexOf('!grab') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("Grabbing this song, "+ data.un +" :star:");
+setTimeout(function(){$(".icon-curate").click()}, 1);
+setTimeout(function(){$($(".curate").children(".menu").children().children()[0]).mousedown()}, 1);
+}
+});
+
+API.on(API.CHAT, function(data){
+ 
+if(data.message.indexOf('!props') === 0){
+API.moderateDeleteChat(data.cid);
+$('#woot').click();
+API.sendChat(":sparkles: "+ data.un +" gives props to @"+ API.getDJ().username +" :sparkles:");
+}
+});
+
+/*(function(){
+        var skipping = false, skipThreshold = 8;
+        API.on(API.SCORE_UPDATE,function(score){
+                if (score.negative >= skipThreshold && !skipping) {
+                        skipping = true;
+                        API.once(API.DJ_ADVANCE,function(){skipping = false;});
+                        API.sendChat("@"+ API.getDJ().username +" too many meh\'s. :thumbsdown:");
+                        API.moderateForceSkip();
+                }
+        });
+})();*/
+
+API.on(API.CHAT, function(data){
+ 
+if(data.message.indexOf('!pass') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat(""+ data.un +" passed the blunt to @" + room[userR].username + " :herb:");
+}
+});
+
+API.on(API.CHAT, function(data){
+
+if(data.message.indexOf('!twerk') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("Twerks on @" + room[userR].username + ".");
+}
+});
+
+API.on(API.CHAT, function(data){
+
+if(data.message.indexOf('!ambercole') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("@"+ room[userR].username +" sucks dick behind the school wearing Sketchers.");
+}
+});
+
+API.on(API.CHAT, function(data){
+
+if(data.message.indexOf('!ten') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("@"+ room[userR].username +" sucky sucky ten dolla? ");
+}
+});
+
+API.on(API.CHAT, function(data){
+    
+if(data.message.indexOf('!lapdance') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("Gives lap dance to @" + room[userR].username + ".");
+}
+});
+
+API.on(API.CHAT, function(data){
+    
+if(data.message.indexOf('!strip') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("Strips for @" + room[userR].username + ".");
+}
+});
+
+API.on(API.CHAT, function(data){
+    
+if(data.message.indexOf('!head') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("@"+ data.un +" Gives head to @" + room[userR].username + ".");
+}
+});
+
+API.on(API.CHAT, function(data){
+    
+if(data.message.indexOf('!grapefruit') === 0){
+API.moderateDeleteChat(data.cid);
+var room = API.getUsers();
+var userR = Math.floor(Math.random() * room.length);
+API.sendChat("Gives grapefruit technique to @" + room[userR].username + ".");
+}
+});
